@@ -36,7 +36,7 @@
   crossorigin="anonymous"></script>
   <script type="text/javascript">
     $('button').click(function() {
-      var answer = (parseInt($('.i').val()) * 126.9) + (parseInt($('.h').val()) * 1.008) + (parseInt($('.o').val()) * 15.999) + (parseInt($('.p').val()) * 30.974)
+      var answer = (parseInt($('.i').val()) * 126.9) + (parseInt($('.h').val()) * 1.008) + (parseInt($('.o').val()) * 15.999) + (parseInt($('.p').val()) * 30.974) || "Inputs Empty"
       $('p').html("<b>Answer: "+ answer +"</b>")
     })
   </script>
