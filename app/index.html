@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IHOP Calculator</title>
+  </head>
+  <body style="text-align: center;">
+    <h1>IHOP Calculator</h1>
+    <label># of I</label>
+    <br>
+    <input class="i" type="number">
+    <br>
+    <br>
+    <label># of H</label>
+    <br>
+    <input class="h" type="number">
+    <br>
+    <br>
+    <label># of O</label>
+    <br>
+    <input class="o" type="number">
+    <br>
+    <br>
+    <label># of P</label>
+    <br>
+    <input class="p" type="number">
+    <br>
+    <br>
+    <button>Calculate it</button>
+    <br>
+    <p></p>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $('button').click(function() {
+      var answer = (parseInt($('.i').val()) * 126.9) + (parseInt($('.h').val()) * 1.008) + (parseInt($('.o').val()) * 15.999) + (parseInt($('.p').val()) * 30.974)
+      $('p').html("<b>Answer: "+ answer +"</b>")
+    })
+  </script>
+</html>
